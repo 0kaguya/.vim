@@ -35,6 +35,7 @@ Plug 'tpope/vim-surround'
 
 " syntax highlights:
 Plug 'cespare/vim-toml'             " toml
+Plug 'fatih/vim-go'                 " go  
 Plug 'rust-lang/rust.vim'           " rust
 Plug 'racer-rust/vim-racer'         " racer
 Plug 'idris-hackers/idris-vim'      " idris
