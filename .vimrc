@@ -33,8 +33,11 @@ call plug#begin()
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
-" syntax highlights:
+" languages:
 Plug 'cespare/vim-toml'             " toml
+Plug 'golygeek/tabular'             " markdown
+Plug 'plasticboy/vim-markdown'
+" programming languages:
 Plug 'fatih/vim-go'                 " go  
 Plug 'rust-lang/rust.vim'           " rust
 Plug 'racer-rust/vim-racer'         " racer
