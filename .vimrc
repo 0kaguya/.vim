@@ -23,12 +23,14 @@ function QuickRun()
     cd %:h
     w %
     if expand('%:e') == 'hs'
-        silent !ghc % -o %:r && echo 'Compiled with GHC compiler. Done.'
+        silent !ghc % -o %:r
+        silent !echo 'Compiled with GHC compiler. Done.'
         silent !while true; do ./%:r; done;
         silent !rm %:r
         redraw!
     elseif expand('%:e') == 'cpp'
-        silent !g++ % -o %:r && echo 'Compiled with GNU C++ compiler on gnu++17. Done.'
+        silent !g++ % -o %:r
+        silent !echo 'Compiled with GNU C++ compiler on gnu++17. Done.'
         silent !while true; do ./%:r; done;
         silent !rm %:r
         redraw!
