@@ -162,5 +162,6 @@ Plug 'rust-lang/rust.vim'           " rust support. function with racer.
 Plug 'idris-hackers/idris-vim'      " idris support
 Plug 'neovimhaskell/haskell-vim'    " haskell support
 
+Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ stl
 " end plugin list:
 call plug#end()
