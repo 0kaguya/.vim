@@ -15,10 +15,10 @@ endfunction
 function QuickRun()
     Cd()
     if empty(glob('%:r'))
-        !echo 'compiling with G++ @gnu++17'
+        silent !echo 'compiling with G++ @gnu++17'
         silent !g++ % -o %:r -std=gnu++17
     endif
-    !./%:r
+    !%:r
 endfunction
 
 function CleanUp()
@@ -34,5 +34,5 @@ function TestWith()
     if empty(glob('%:r'))
         Compile()
     endif
-    !xsel -b | ./%:r
+    !xsel -b | %:r
 endfunction
