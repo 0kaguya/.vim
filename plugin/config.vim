@@ -51,30 +51,3 @@ noremap <leader>gc :!git commit -m<space>
 noremap <leader>ge :silent !git config --edit<CR><C-l>
 noremap <leader>gp :!git pull<CR>
 noremap <leader>gpom :!git push origin master<CR>
-
-
-function Cd()
-    cd %:h
-    w %
-endfunction
-
-function Clear()
-    call Cd()
-    silent !rm %:r
-    redraw!
-endfunction
-
-function Copy()
-    silent !xsel -b < %
-    redraw!
-endfunction
-
-function CopyPath()
-    silent !echo %:p | xsel -b
-    redraw!
-endfunction
-
-function Template()
-    runtime doc/template.%:e
-    normal ggddG
-endfunction
