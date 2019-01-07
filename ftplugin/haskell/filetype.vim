@@ -11,12 +11,12 @@ Plug 'neovimhaskell/haskell-vim'    " haskell support
 call plug#end()
 
 function Compile()
-    Cd()
+    w
     !ghc % -o %:r -O2
 endfunction
 
 function QuickRun()
-    Cd()
+    w
     if empty(glob('%:r'))
         !echo 'compiling with GHC'
         silent !ghc % -o %:r
@@ -25,7 +25,6 @@ function QuickRun()
 endfunction
 
 function CleanUp()
-    Cd()
     if !empty(glob('%:r.hi'))
         silent !rm %:r.hi
     endif

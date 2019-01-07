@@ -3,11 +3,7 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
-function Compile()
-    Cd()
-endfunction
-
 function QuickRun()
-    Cd()
+    w
     !echo 'running with CPython' && python %
 endfunction

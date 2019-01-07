@@ -1,8 +1,3 @@
-function Cd()
-    cd %:h
-    w
-endfunction
-
 function CopyPath()
     silent !echo %:p | xsel -b
     redraw!

@@ -8,12 +8,12 @@ Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ stl
 call plug#end()
 
 function Compile()
-    Cd()
+    w
     !g++ % -o %:r -O2 -std=gnu++17
 endfunction
 
 function QuickRun()
-    Cd()
+    w
     if empty(glob('%:r'))
         silent !echo 'compiling with G++ @gnu++17'
         silent !g++ % -o %:r -std=gnu++17
@@ -22,7 +22,6 @@ function QuickRun()
 endfunction
 
 function CleanUp()
-    Cd()
     if !empty(glob('%:r'))
         silent !rm %:r
     endif
@@ -30,7 +29,7 @@ function CleanUp()
 endfunction
 
 function TestWith()
-    Cd()
+    w
     if empty(glob('%:r'))
         Compile()
     endif
