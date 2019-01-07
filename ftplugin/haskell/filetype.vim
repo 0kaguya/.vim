@@ -10,6 +10,8 @@ call plug#begin()
 Plug 'neovimhaskell/haskell-vim'    " haskell support
 call plug#end()
 
+cd %:h
+
 function Compile()
     w
     !ghc % -o %:r -O2

@@ -3,6 +3,8 @@ set shiftwidth=2
 set smarttab
 set expandtab
 
+cd %:h
+
 call plug#begin()
 Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ stl
 call plug#end()
@@ -18,7 +20,7 @@ function QuickRun()
         silent !echo 'compiling with G++ @gnu++17'
         silent !g++ % -o %:r -std=gnu++17
     endif
-    !%:r
+    !./%:r
 endfunction
 
 function CleanUp()
@@ -33,5 +35,5 @@ function TestWith()
     if empty(glob('%:r'))
         Compile()
     endif
-    !xsel -b | %:r
+    !xsel -b | ./%:r
 endfunction
