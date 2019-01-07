@@ -34,7 +34,7 @@ noremap <C-k> kzz
 "noremap <C-c>c :w<CR>:!g++ % -o %:h -O2<CR>
 "noremap <C-c>x :!./%:h<CR>
 " common operations at ','
-noremap <leader>,w :w %<CR>
+noremap <leader>,w :w<cr>
 noremap <leader>,q :q<CR>
 noremap <leader>,e :e<space>
 noremap <leader>,c :call common#CopyPath()<CR>
