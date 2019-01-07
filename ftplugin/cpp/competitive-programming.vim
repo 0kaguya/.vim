@@ -34,3 +34,8 @@ iabbrev imp #include <map>
 iabbrev ium #include <unordered_map>
 iabbrev ist #include <set>
 iabbrev ius #include <unordered_set>
+
+
+" read
+iabbrev readll [](){long long n; cin >> n; return n;}
+iabbrev readvc [](auto& v, int i){int j = 0; while (j < i) cin >> v[j++];}
