@@ -2,7 +2,11 @@
 set nocompatible
 set number
 filetype indent on
+filetype plugin on
 syntax on
+
+" use system-wise clipboard
+set clipboard=unnamedplus
 
 " tab and autoshift:
 set tabstop=4
@@ -19,7 +23,35 @@ highlight CursorLineNr ctermfg=blue
 set wildmode=longest,list,full
 set wildmenu
 
-" keymap
+" disable chinese input method (fcitx) when enter the normal mode
+autocmd InsertLeave * let g:fcitx_tmp = system('fcitx-remote -c') " call Fcitx2en()
+
+" vim plug: a fast, elegant plugin manager
+
+" auto install vim-plug
+if empty(glob( '~/.vim/autoload/plug.vim'))
+	!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" begin plugin list:
+call plug#begin()
+
+Plug 'tpope/vim-surround'
+Plug 'racer-rust/vim-racer'         " racer language server
+Plug 'cespare/vim-toml'             " toml support
+"Plug 'plasticboy/vim-markdown'      " markdown support
+"Plug 'fatih/vim-go'                 " golang support
+Plug 'jlapolla/vim-coq-plugin'      " coq highlighting
+Plug 'rust-lang/rust.vim'           " rust support. function with racer.
+Plug 'idris-hackers/idris-vim'      " idris support
+Plug 'neovimhaskell/haskell-vim'    " haskell support
+
+Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ stl
+" end plugin list:
+call plug#end()
+
+" keymaps
 
 noremap <C-z> :shell<CR>
 noremap <C-j> jzz
@@ -31,9 +63,8 @@ noremap <C-c>x :!./%:h<CR>
 noremap ,,w :w %<CR>
 noremap ,,q :q<CR>
 noremap ,,e :e<space>
-noremap ,,x :call Clear()<CR>
-noremap ,,c :call Copy()<CR>
-noremap ,,p :call CopyPath()<CR>
+noremap ,,c :call CopyPath()<CR>
+noremap ,,v ggVG
 noremap ,,t :call Template()<CR>
 
 " compile at 'c'
@@ -54,7 +85,18 @@ noremap ,gp :!git pull<CR>
 noremap ,gpom :!git push origin master<CR>
 
 " competitive programming at 'c' (space)
-noremap <space>cd ggO#define debug(expr) expr<ESC><C-o>
+"noremap <space>cd ggO#define debug(expr) expr<ESC><C-o>
+noremap <space>c; 0xxi//<esc>
+noremap <space>ce :w<cr>:e %:r.txt<cr>
+noremap <space>cr :w<cr>:e %:r.cpp<cr>
+noremap <space>cx :w<cr>:!g++ %:r.cpp -o %:r -O2 && ./%:r < %:r.txt<cr>
+noremap <space>cz :e! %:r.cpp<cr>:silent !rm %:r.txt %:r<cr><c-l>
+" shortcuts
+noremap <space>cic aios::sync_with_stdio(0), cin.tie(0), cout.tie(0);<esc>
+noremap <space>ciu ausing namespace std;<esc>
+noremap <space>cii a#include <iostream><esc>
+noremap <space>cis a#include <cstdio><esc>
+noremap <space>cia a#include <algorithm><esc>
 
 function Cd()
     cd %:h
@@ -137,31 +179,3 @@ function RunScript()
         !echo 'Invalid filetype. No Interpreter is specified.'
     endif
 endfunction
-
-" disable chinese input method (fcitx) when enter the normal mode
-autocmd InsertLeave * let g:fcitx_tmp = system('fcitx-remote -c') " call Fcitx2en()
-
-" vim plug: a fast, elegant plugin manager
-
-" auto install vim-plug
-if empty(glob( '~/.vim/autoload/plug.vim'))
-	!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-" begin plugin list:
-call plug#begin()
-
-Plug 'tpope/vim-surround'
-Plug 'racer-rust/vim-racer'         " racer language server
-Plug 'cespare/vim-toml'             " toml support
-"Plug 'plasticboy/vim-markdown'      " markdown support
-"Plug 'fatih/vim-go'                 " golang support
-Plug 'jlapolla/vim-coq-plugin'      " coq highlighting
-Plug 'rust-lang/rust.vim'           " rust support. function with racer.
-Plug 'idris-hackers/idris-vim'      " idris support
-Plug 'neovimhaskell/haskell-vim'    " haskell support
-
-Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ stl
-" end plugin list:
-call plug#end()
