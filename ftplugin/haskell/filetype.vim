@@ -21,7 +21,7 @@ function QuickRun()
         !echo 'compiling with GHC'
         silent !ghc % -o %:r
     endif
-    !./%:r
+    !/%:r
 endfunction
 
 function CleanUp()
