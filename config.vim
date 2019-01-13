@@ -2,6 +2,11 @@ set nocompatible
 filetype plugin indent on
 syntax on
 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+
 " layout
 set number
 set cursorline
@@ -37,9 +42,9 @@ noremap <C-k> kzz
 noremap <leader>,w :w<cr>
 noremap <leader>,q :q<CR>
 noremap <leader>,e :e<space>
-noremap <leader>,c :call common#CopyPath()<CR>
+noremap <leader>,c :call CopyPath()<CR>
 noremap <leader>,v ggVG
-noremap <leader>,t :call common#Template()<CR>
+noremap <leader>,t :call Template()<CR>
 " compile at 'c'
 noremap <leader>cc :call Compile()<CR>
 noremap <leader>cx :call QuickRun()<CR>
