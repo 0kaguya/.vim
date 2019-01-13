@@ -17,7 +17,7 @@ noremap <space>z :e! %:r.cpp<cr>:silent !rm %:r.txt %:r<cr><c-l>
 """ macros
 iabbrev mian main
 iabbrev ll long long
-iabbrev unms using namespace std;
+iabbrev unss using namespace std;
 iabbrev qcin ios::sync_with_stdio(0), cin.tie(0), cout.tie(0);
 "" includes
 iabbrev iag #include <algorithm>
@@ -34,7 +34,6 @@ iabbrev imp #include <map>
 iabbrev ium #include <unordered_map>
 iabbrev ist #include <set>
 iabbrev ius #include <unordered_set>
-
 " read
 iabbrev readll [](){long long n; cin >> n; return n;}
 iabbrev readvc [](auto& v, int i){int j = 0; while (j < i) cin >> v[j++];}
