@@ -1,11 +1,18 @@
-set nocompatible
-filetype plugin indent on
-syntax on
-
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
+
+" plugin list
+call plug#begin()
+Plug 'tpope/vim-surround'
+"Plug 'plasticboy/vim-markdown'      " markdown support
+"Plug 'fatih/vim-go'                 " golang support
+call plug#end()
+
+set nocompatible
+filetype plugin indent on
+syntax on
 
 " layout
 set number
@@ -15,19 +22,6 @@ highlight CursorLineNr ctermfg=blue
 
 " use system-wise clipboard
 set clipboard=unnamedplus
-
-" auto install vim-plug
-if empty(glob( '~/.vim/autoload/plug.vim'))
-	!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-" plugin list
-call plug#begin()
-Plug 'tpope/vim-surround'
-"Plug 'plasticboy/vim-markdown'      " markdown support
-"Plug 'fatih/vim-go'                 " golang support
-call plug#end()
 
 " leader key
 let mapleader = ","

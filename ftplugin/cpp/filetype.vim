@@ -6,7 +6,7 @@ set expandtab
 cd %:h
 
 call plug#begin()
-Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ stl
+Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ STL
 call plug#end()
 
 function Compile()
