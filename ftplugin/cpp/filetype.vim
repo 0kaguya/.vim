@@ -3,7 +3,11 @@ set shiftwidth=2
 set smarttab
 set expandtab
 
-cd %:h
+if empty(glob("%:h"))
+    echom "Invalid Path"
+else
+    cd %:h
+en
 
 call plug#begin()
 Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ STL
