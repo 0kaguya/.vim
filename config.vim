@@ -3,13 +3,6 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
-" plugin list
-call plug#begin()
-Plug 'tpope/vim-surround'
-"Plug 'plasticboy/vim-markdown'      " markdown support
-"Plug 'fatih/vim-go'                 " golang support
-call plug#end()
-
 set nocompatible
 filetype plugin indent on
 syntax on

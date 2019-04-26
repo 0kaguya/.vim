@@ -9,9 +9,6 @@ else
     cd %:h
 en
 
-call plug#begin()
-Plug 'octol/vim-cpp-enhanced-highlight' " syntax highlight for c++ STL
-call plug#end()
 
 function Compile()
     w

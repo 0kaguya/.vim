@@ -6,10 +6,6 @@ set expandtab
 set wildmode=longest,list,full
 set wildmenu
 
-call plug#begin()
-Plug 'neovimhaskell/haskell-vim'    " haskell support
-call plug#end()
-
 cd %:h
 
 function Compile()

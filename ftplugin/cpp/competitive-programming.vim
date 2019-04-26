@@ -1,6 +1,7 @@
 let maplocalleader = " "
 
 cm ; <cr>
+ino fd <esc>
 
 no <localleader>e :w<cr>:new %:r.txt<cr>
 no <localleader>w :w<cr>
@@ -81,6 +82,7 @@ fu Vector()
 endf
 ia isr <c-o>:Incl string
 ia iqu <c-o>:Incl queue
+ia idq <c-o>:Incl deque
 ia ils <c-o>:Incl list
 ia iar <c-o>:Incl array
 ia imp <c-o>:Incl map
@@ -121,7 +123,7 @@ fu s:rd(...)
         let t = substitute(t, "type", a:1, "g")
         let l = a:2
     else
-        let t = substitute(t, "type", "int", "g")
+        let t = substitute(t, "type", "long long", "g")
         let l = a:1
     en
     let l = split(l, ",")
