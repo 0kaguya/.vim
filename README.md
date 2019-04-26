@@ -10,12 +10,6 @@ it will be a minimal configuration for vim. it contains:
 
 ## Install
 
-#### Dependencies
-
-- vim/gvim
-- git
-- xsel
-
 if you have a \*unix environment, run these commands in your terminal.
 if you are using windows machine, use `~/vimfiles` instead of `~/.vim` in your powershell.
 
