@@ -5,15 +5,32 @@ if empty(globpath(&rtp, 'autoload/plug.vim'))
 endif
 
 call plug#begin()
+
+" enhanced editing for brackets and parentheses
 Plug 'tpope/vim-surround'
-Plug 'racer-rust/vim-racer'         
+
+" rust support
 Plug 'rust-lang/rust.vim'           
+Plug 'racer-rust/vim-racer'         
+
+" toml support
 Plug 'cespare/vim-toml'             
+
+" scala support
 Plug 'derekwyatt/vim-scala'
+
+" idris support
 Plug 'idris-hackers/idris-vim'      
+
+" haskell support
 Plug 'neovimhaskell/haskell-vim'    
+
+" c++ STL highlighting
 Plug 'octol/vim-cpp-enhanced-highlight' 
+
+" coq support
 Plug 'jlapolla/vim-coq-plugin'      
+
 call plug#end()
 
 runtime config.vim
