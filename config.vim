@@ -3,6 +3,9 @@ set shiftwidth=4
 set expandtab
 set smarttab
 
+set noundofile
+set nobackup
+
 set nocompatible
 filetype plugin indent on
 syntax on
