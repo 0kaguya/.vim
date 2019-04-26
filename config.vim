@@ -5,6 +5,7 @@ set smarttab
 
 set noundofile
 set nobackup
+set backspace=indent,eol,start
 
 set nocompatible
 filetype plugin indent on
