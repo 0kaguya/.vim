@@ -6,6 +6,9 @@ endif
 
 call plug#begin()
 
+" show git diff on the left side
+Plug 'airblade/vim-gitgutter'
+
 " enhanced editing for brackets and parentheses
 Plug 'tpope/vim-surround'
 
