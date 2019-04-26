@@ -16,13 +16,13 @@ it will be a minimal configuration for vim. it contains:
 - git
 - xsel
 
-assume you are at \*unix environment. run command in terminal:
+if you have a \*unix environment, run these commands in your terminal.
+if you are using windows machine, use `~/vimfiles` instead of `~/.vim` in your powershell.
 
 ``` bash
-$ rm -rf ~/.vim ~/.vimrc
+$ rm -r ~/.vim ~/.vimrc
 $ git clone https://github.com/0kaguya/vimrc.git ~/.vim
+$ vim
 ```
 
-if you are using windows machine, use `~/vimfiles` instead in your powershell.
-
-after that, open vim and wait until all plugins installed.
+you can wait until all plugins installed.
