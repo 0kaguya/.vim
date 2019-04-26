@@ -23,4 +23,6 @@ $ rm -rf ~/.vim ~/.vimrc
 $ git clone https://github.com/0kaguya/vimrc.git ~/.vim
 ```
 
-after that, open vim and wait until all plugins are installed.
+if you are using windows machine, use `~/vimfiles` instead in your powershell.
+
+after that, open vim and wait until all plugins installed.
