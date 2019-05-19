@@ -12,6 +12,9 @@ Plug 'airblade/vim-gitgutter'
 " enhanced editing for brackets and parentheses
 Plug 'tpope/vim-surround'
 
+" julia support
+Plug 'JuliaEditorSupport/julia-vim'
+
 " rust support
 Plug 'rust-lang/rust.vim'           
 Plug 'racer-rust/vim-racer'         
