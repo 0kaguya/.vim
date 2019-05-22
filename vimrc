@@ -15,6 +15,12 @@ Plug 'tpope/vim-surround'
 " julia support
 Plug 'JuliaEditorSupport/julia-vim'
 
+" racket support
+Plug 'wlangstroth/vim-racket'
+
+" racket/pie support
+Plug 'felipesere/pie-highlight.vim'
+
 " rust support
 Plug 'rust-lang/rust.vim'           
 Plug 'racer-rust/vim-racer'         
