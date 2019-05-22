@@ -1,6 +1,6 @@
 # My Vim Config
 
-My own ideas of vim are all about *quick and lightweight editing*. thus
+My own ideas of vim are all about *quick and lightweight editing*. Thus
 it will be a minimal config of vim. This config contains:
 
 - Commonly used vim configuration.
@@ -19,4 +19,4 @@ $ git clone https://github.com/0kaguya/vimrc.git ~/.vim
 $ vim
 ```
 
-Wait until all plugins installed, then type `:wq` to quit vim:)
+Wait until all plugins installed, then type `:q!` to quit vim:)
