@@ -43,6 +43,9 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 " coq support
 Plug 'jlapolla/vim-coq-plugin'      
 
+" curry support
+Plug 'huesersohn/curry.vim'
+
 call plug#end()
 
 runtime config.vim
