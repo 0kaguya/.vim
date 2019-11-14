@@ -12,39 +12,41 @@ Plug 'airblade/vim-gitgutter'
 " enhanced editing for brackets and parentheses
 Plug 'tpope/vim-surround'
 
-" julia support
-Plug 'JuliaEditorSupport/julia-vim'
+"" lang/format support
 
-" racket support
-Plug 'wlangstroth/vim-racket'
-
-" racket/pie support
-Plug 'felipesere/pie-highlight.vim'
-
-" rust support
-Plug 'rust-lang/rust.vim'           
-Plug 'racer-rust/vim-racer'         
-
-" toml support
-Plug 'cespare/vim-toml'             
-
-" scala support
-Plug 'derekwyatt/vim-scala'
-
-" idris support
-Plug 'idris-hackers/idris-vim'      
-
-" haskell support
-Plug 'neovimhaskell/haskell-vim'    
+" coq
+Plug 'jlapolla/vim-coq-plugin'      
 
 " c++ STL highlighting
 Plug 'octol/vim-cpp-enhanced-highlight' 
 
-" coq support
-Plug 'jlapolla/vim-coq-plugin'      
-
-" curry support
+" curry
 Plug 'huesersohn/curry.vim'
+
+" haskell
+Plug 'neovimhaskell/haskell-vim'    
+
+" idris
+Plug 'idris-hackers/idris-vim'      
+
+" julia
+Plug 'JuliaEditorSupport/julia-vim'
+
+" pie
+Plug 'felipesere/pie-highlight.vim'
+
+" racket
+Plug 'wlangstroth/vim-racket'
+
+" rust
+Plug 'rust-lang/rust.vim'           
+Plug 'racer-rust/vim-racer'         
+
+" scala
+Plug 'derekwyatt/vim-scala'
+
+" toml
+Plug 'cespare/vim-toml'             
 
 call plug#end()
 
