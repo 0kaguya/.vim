@@ -12,7 +12,7 @@ so it will be a minimal config of vim. It contains
 
 ``` bash
 $ rm -r ~/.vim ~/.vimrc
-$ git clone https://github.com/0kaguya/vimrc.git ~/.vim
+$ git clone https://github.com/0kaguya/.vim ~/.vim
 $ vim
 ```
 
