@@ -23,6 +23,9 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 " curry
 Plug 'huesersohn/curry.vim'
 
+" erlang
+Plug 'vim-erlang/vim-erlang-runtime'
+
 " haskell
 Plug 'neovimhaskell/haskell-vim'    
 
