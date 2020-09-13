@@ -14,6 +14,9 @@ Plug 'tpope/vim-surround'
 
 "" lang/format support
 
+" Agda support
+Plug 'derekelkins/agda-vim'
+
 " coq
 Plug 'jlapolla/vim-coq-plugin'      
 
