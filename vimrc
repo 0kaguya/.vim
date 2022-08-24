@@ -29,6 +29,9 @@ Plug 'huesersohn/curry.vim'
 " erlang
 Plug 'vim-erlang/vim-erlang-runtime'
 
+" fish shell
+Plug 'dag/vim-fish'
+
 " haskell
 Plug 'neovimhaskell/haskell-vim'    
 
