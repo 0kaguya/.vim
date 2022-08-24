@@ -47,3 +47,10 @@ noremap <leader>gc :!git commit -m<space>
 noremap <leader>ge :silent !git config --edit<CR><C-l>
 noremap <leader>gp :!git pull<CR>
 noremap <leader>gpom :!git push origin master<CR>
+
+
+" gitgutter
+highlight SignColumn ctermbg=NONE
+set updatetime=1000
+set signcolumn=yes
+
