@@ -41,6 +41,9 @@ Plug 'idris-hackers/idris-vim'
 " julia
 Plug 'JuliaEditorSupport/julia-vim'
 
+" nim
+Plug 'zah/nim.vim'
+
 " pie
 Plug 'felipesere/pie-highlight.vim'
 
