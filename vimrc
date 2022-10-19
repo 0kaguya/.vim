@@ -44,8 +44,8 @@ Plug 'JuliaEditorSupport/julia-vim'
 " nim
 Plug 'zah/nim.vim'
 
-" pie
-Plug 'felipesere/pie-highlight.vim'
+"" pie
+"Plug 'felipesere/pie-highlight.vim'
 
 " racket
 Plug 'wlangstroth/vim-racket'
@@ -61,5 +61,8 @@ Plug 'derekwyatt/vim-scala'
 Plug 'cespare/vim-toml'             
 
 call plug#end()
+
+" debug vim-cpp-enhanced
+syn keyword cppStructure class typename template namespace
 
 runtime config.vim
