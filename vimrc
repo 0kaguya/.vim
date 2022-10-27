@@ -20,8 +20,10 @@ Plug 'derekelkins/agda-vim'
 " coq
 Plug 'jlapolla/vim-coq-plugin'      
 
-" c++ STL highlighting
-Plug 'octol/vim-cpp-enhanced-highlight' 
+" cpp highlighting
+Plug 'bfrg/vim-cpp-modern'
+"" c++ STL highlighting
+"Plug 'octol/vim-cpp-enhanced-highlight' 
 
 " curry
 Plug 'huesersohn/curry.vim'
@@ -44,7 +46,7 @@ Plug 'JuliaEditorSupport/julia-vim'
 " nim
 Plug 'zah/nim.vim'
 
-"" pie
+" pie
 "Plug 'felipesere/pie-highlight.vim'
 
 " racket
@@ -63,6 +65,6 @@ Plug 'cespare/vim-toml'
 call plug#end()
 
 " debug vim-cpp-enhanced
-syn keyword cppStructure class typename template namespace
+"syn keyword cppStructure class typename template namespace
 
 runtime config.vim
