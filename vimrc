@@ -36,6 +36,7 @@ Plug 'dag/vim-fish'
 
 " haskell
 Plug 'neovimhaskell/haskell-vim'    
+Plug 'alx741/vim-hindent'
 
 " idris
 Plug 'idris-hackers/idris-vim'      
