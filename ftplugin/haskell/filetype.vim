@@ -1,5 +1,5 @@
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
 set expandtab
 
@@ -8,29 +8,5 @@ set wildmenu
 
 cd %:h
 
-function Compile()
-    w
-    !ghc % -o %:r -O2
-endfunction
-
-function QuickRun()
-    w
-    if empty(glob('%:r'))
-        !echo 'compiling with GHC'
-        silent !ghc % -o %:r
-    endif
-    !/%:r
-endfunction
-
-function CleanUp()
-    if !empty(glob('%:r.hi'))
-        silent !rm %:r.hi
-    endif
-    if !empty(glob('%:r.o'))
-        silent !rm %:r.o
-    endif
-    if !empty(glob('%:r'))
-        silent !rm %:r
-    endif
-    redraw!
-endfunction
+let g:hindent_line_length = 160
+let g:hindent_command = "hindent"
