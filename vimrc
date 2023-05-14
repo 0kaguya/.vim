@@ -44,6 +44,9 @@ Plug 'idris-hackers/idris-vim'
 " julia
 Plug 'JuliaEditorSupport/julia-vim'
 
+" latex
+Plug 'lervag/vimtex'
+
 " nim
 Plug 'zah/nim.vim'
 
