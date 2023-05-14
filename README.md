@@ -1,21 +1,20 @@
 # My Vim Config
 
-I like vim as a lightweight editor,
-so it will be a minimal config of vim. It contains
+I treat a vim as a lightweight editor,
+so it will be a minimal config. There are:
 
-- Everyone vim configuration.
+- Common out-of-box vim configuration.
 - Basic support, such as indention and syntax highlighting,
   for many languages.
-- Some shortcuts.
+- Some shortcuts. (not maintained for a while.)
 
 ## Install
 
 ``` bash
 $ rm -r ~/.vim ~/.vimrc
 $ git clone https://github.com/0kaguya/.vim ~/.vim
-$ vim
+$ vim +PlugInstall +qall
 ```
 
-Wait until all plugins installed, then type `:q!` to quit vim.
-If you are running a Windows machine, use `~/vimfiles` instead of `~/.vim`.
+If you are running a Windows machine, type `~/vimfiles` instead of `~/.vim`.
 
