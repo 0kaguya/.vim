@@ -1,5 +1,5 @@
 " gvim
-win 120 40
+win 80 30
 set go-=m
 set go-=T
 

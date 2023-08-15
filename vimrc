@@ -1,3 +1,6 @@
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
 set shiftwidth=4
 set expandtab
 set smarttab
@@ -21,5 +24,7 @@ highlight CursorLineNr ctermfg=blue
 " use system-wise clipboard
 set clipboard=unnamedplus
 
-" load community plugins
+
+" load package list
 runtime custom.vim
+
