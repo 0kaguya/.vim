@@ -7,7 +7,7 @@ set noundofile
 set nobackup
 set backspace=indent,eol,start
 
-set viminfo+=n~/.vim/viminfo
+set viminfo+=n~/vimfiles/viminfo
 
 set nocompatible
 filetype plugin indent on
@@ -51,7 +51,3 @@ noremap <leader>gp :!git pull<CR>
 noremap <leader>gpom :!git push origin master<CR>
 
 
-" gitgutter
-highlight SignColumn ctermbg=NONE
-set updatetime=1000
-set signcolumn=yes
